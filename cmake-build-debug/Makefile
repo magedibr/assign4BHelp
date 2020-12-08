@@ -170,32 +170,32 @@ BinaryTree.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/BinaryTree.c.s
 .PHONY : BinaryTree.c.s
 
-assignment4PartialSoln.o: assignment4PartialSoln.c.o
+main.o: main.c.o
 
-.PHONY : assignment4PartialSoln.o
+.PHONY : main.o
 
 # target to build an object file
-assignment4PartialSoln.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o
-.PHONY : assignment4PartialSoln.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/main.c.o
+.PHONY : main.c.o
 
-assignment4PartialSoln.i: assignment4PartialSoln.c.i
+main.i: main.c.i
 
-.PHONY : assignment4PartialSoln.i
+.PHONY : main.i
 
 # target to preprocess a source file
-assignment4PartialSoln.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.i
-.PHONY : assignment4PartialSoln.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/main.c.i
+.PHONY : main.c.i
 
-assignment4PartialSoln.s: assignment4PartialSoln.c.s
+main.s: main.c.s
 
-.PHONY : assignment4PartialSoln.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-assignment4PartialSoln.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.s
-.PHONY : assignment4PartialSoln.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign4BHelp.dir/build.make CMakeFiles/assign4BHelp.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -209,9 +209,9 @@ help:
 	@echo "... BinaryTree.o"
 	@echo "... BinaryTree.i"
 	@echo "... BinaryTree.s"
-	@echo "... assignment4PartialSoln.o"
-	@echo "... assignment4PartialSoln.i"
-	@echo "... assignment4PartialSoln.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

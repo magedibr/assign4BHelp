@@ -72,7 +72,7 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
         for(int i =0;i<RANGE;i++) {
             fprintf(in, "%d ", rand());
         }
-        fclose(in); // close file
+        fclose(in); //File closure
 
         in = fopen("..//data//randomintegers.txt", "r"); // reopen file to build a BST
                             // with random integers from file 'in'
@@ -94,9 +94,9 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
              }
          }
 
-         ;
 
-        fclose(out);
+
+        fclose(out); /////File closure
 
 
 
@@ -110,7 +110,9 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
              return 0;
          }
          serialize(bst.root, serialTxt); // where bst is of BinaryTree type
-         fclose(serialTxt);///One of the files being closed
+
+         fclose(serialTxt);/////File closure
+
          ////////////////////////////////Serializing End////////////////////////////////
 
          //TODO 11. open a text file for writing and write above BSTs inOrder traversal to this file. //done
@@ -122,13 +124,19 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
              return 0;
          }
         inOrder(InOrderTxt,bst.root); // where bst is of BinaryTree type
-        fclose(InOrderTxt);///One of the files being closed
+
+        fclose(InOrderTxt);/////File closure
+
          //////////////////////////////// In Order End////////////////////////////////
 
         // TODO 12. close all files!// done
 
+
+
+
+
         // TODO 13. reopen file of sorted list of integers
-        ////////////////////////File opening/////////
+        ////////////////////////File opening ////////////////////////
 
         FILE *optTree = fopen("..//data//InOrder.txt", "r");
 
@@ -136,7 +144,9 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
          TreeNodePtr lastNode[MAX_HEIGHT];
          for (n = 0; n < MAX_HEIGHT; n++)
              lastNode[n] = NULL;
+         ////////////////////////End of File opening ////////////////////////
 
+         // TODO 14. Major task: using optimum BST algorithms build and save an optimum BST as a serialized text file!
 
          while (fscanf(optTree, "%d", &n) == 1)
              insertBestBST(n, lastNode);
@@ -158,5 +168,5 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
 
 
 
-         // TODO 14. Major task: using optimum BST algorithms build and save an optimum BST as a serialized text file!
+
      } // end main

@@ -77,18 +77,18 @@ include CMakeFiles/assign4BHelp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/assign4BHelp.dir/flags.make
 
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o: CMakeFiles/assign4BHelp.dir/flags.make
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o: ../assignment4PartialSoln.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o   -c /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c
+CMakeFiles/assign4BHelp.dir/main.c.o: CMakeFiles/assign4BHelp.dir/flags.make
+CMakeFiles/assign4BHelp.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assign4BHelp.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/assign4BHelp.dir/main.c.o   -c /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c
 
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c > CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.i
+CMakeFiles/assign4BHelp.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assign4BHelp.dir/main.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c > CMakeFiles/assign4BHelp.dir/main.c.i
 
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c -o CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.s
+CMakeFiles/assign4BHelp.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assign4BHelp.dir/main.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c -o CMakeFiles/assign4BHelp.dir/main.c.s
 
 CMakeFiles/assign4BHelp.dir/BinaryTree.c.o: CMakeFiles/assign4BHelp.dir/flags.make
 CMakeFiles/assign4BHelp.dir/BinaryTree.c.o: ../BinaryTree.c
@@ -105,13 +105,13 @@ CMakeFiles/assign4BHelp.dir/BinaryTree.c.s: cmake_force
 
 # Object files for target assign4BHelp
 assign4BHelp_OBJECTS = \
-"CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o" \
+"CMakeFiles/assign4BHelp.dir/main.c.o" \
 "CMakeFiles/assign4BHelp.dir/BinaryTree.c.o"
 
 # External object files for target assign4BHelp
 assign4BHelp_EXTERNAL_OBJECTS =
 
-assign4BHelp: CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o
+assign4BHelp: CMakeFiles/assign4BHelp.dir/main.c.o
 assign4BHelp: CMakeFiles/assign4BHelp.dir/BinaryTree.c.o
 assign4BHelp: CMakeFiles/assign4BHelp.dir/build.make
 assign4BHelp: CMakeFiles/assign4BHelp.dir/link.txt

@@ -4,6 +4,6 @@
 CMakeFiles/assign4BHelp.dir/BinaryTree.c.o: ../BinaryTree.c
 CMakeFiles/assign4BHelp.dir/BinaryTree.c.o: ../BinaryTree.h
 
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o: ../BinaryTree.h
-CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o: ../assignment4PartialSoln.c
+CMakeFiles/assign4BHelp.dir/main.c.o: ../BinaryTree.h
+CMakeFiles/assign4BHelp.dir/main.c.o: ../main.c
 

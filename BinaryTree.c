@@ -58,7 +58,7 @@ void inOrder(FILE * out, TreeNodePtr node) {
 
 void serialize(TreeNode* root, FILE *fp)
 {
-// If current node is NULL, store marker
+
     if (root == NULL)
     {
         fprintf(fp, "%c ", MARKER);
@@ -67,15 +67,11 @@ void serialize(TreeNode* root, FILE *fp)
 
 // Else, store current node and recur for its children
     int intData =root->data.num; // extract value if the data is an integer
-
-
-        fprintf(fp, "%d ", intData); // if the data is an integer
+       fprintf(fp, "%d ", intData); // if the data is an integer
 
     serialize(root->left, fp);
     serialize(root->right, fp);
 }
-
-//From BestBST.c
 
 int getNodeLevel(int n) {
 

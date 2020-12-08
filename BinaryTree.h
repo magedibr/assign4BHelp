@@ -32,44 +32,5 @@ TreeNodePtr finalizeBestBST(TreeNodePtr lastNode[]);
 void serialize(TreeNode* root, FILE *fp);
 
 
-/* Sample code demonstrating the use of serialize function
-
-FILE *fp = fopen("MyBSTtree.txt", "w");
-if (fp == NULL)
-{
-puts("Could not open file");
-return 0;
-}
-serialize(bst.root, fp); // where bst is of BinaryTree type
-fclose(fp);
-/* Sample code demonstrating the use of serialize function
-
-FILE *fp = fopen("MyBSTtree.txt", "w");
-    if (fp == NULL)
-    {
-        puts("Could not open file");
-        return 0;
-    }
-    serialize(bst.root, fp); // where bst is of BinaryTree type
-    fclose(fp);
-
-
-
-
-// The following code demonstrates reading a tree structure (serialized data)
-// and extracting the node data from it and saving it into an integer array
-
-FILE * in = fopen("data.txt", "r"); // input text file
-        int arr[25] = {0};
-        char str[120];
-        int dex = 0;
-        while(fscanf(in, "%s", str)!=EOF){ // or while(fscanf(in, "%s", str)==1)
-                if (strcmp(str, "@") == 0)
-                    continue; // ignore @ marker
-                else
-                arr[dex++] = atoi(str); // extract the integer from the string
-                                        // and populate the array
-        }
-*/
 
 #endif // BINARYTREE_H_INCLUDED

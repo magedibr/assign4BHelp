@@ -84,7 +84,7 @@
 		<Unit filename="/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.h">
 			<Option target="assign4BHelp"/>
 		</Unit>
-		<Unit filename="/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c">
+		<Unit filename="/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c">
 			<Option target="assign4BHelp"/>
 		</Unit>
 		<Unit filename="/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/CMakeLists.txt">

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/assign4BHelp.dir/BinaryTree.c.o"
-  "CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o"
+  "CMakeFiles/assign4BHelp.dir/main.c.o"
   "assign4BHelp"
   "assign4BHelp.pdb"
 )

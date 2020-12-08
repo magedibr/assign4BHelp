@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.c" "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/cmake-build-debug/CMakeFiles/assign4BHelp.dir/BinaryTree.c.o"
-  "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c" "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/cmake-build-debug/CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o"
+  "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c" "/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/cmake-build-debug/CMakeFiles/assign4BHelp.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/assign4BHelp.dir/assignment4PartialSoln.c.o CMakeFiles/assign4BHelp.dir/BinaryTree.c.o  -o assign4BHelp 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.h
+
+/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/assignment4PartialSoln.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+BinaryTree.h
+/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.h
+

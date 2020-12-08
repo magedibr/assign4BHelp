@@ -135,13 +135,15 @@ TreeNodePtr finalizeBestBST(TreeNodePtr lastNode[]) {
     TreeNodePtr root = lastNode[n];
 
     while (n > 0) {
-        //comments required
+       //Looking for highest node with a null right subtree. If not found the variable n
+       //is decremented until a match is found.
         if (lastNode[n] -> right != NULL) n--;
         else {
-            // comments required
+           //Set the right child to the highest node in last node.
             TreeNodePtr tn = lastNode[n] -> left;
             m = n - 1;
-            // comments required
+
+           //Make sure that the node is not already in use in the left subtree of n
             while (m >= 0 && tn == lastNode[m]) {
                 tn = tn -> right;
                 m--;

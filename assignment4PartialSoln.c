@@ -77,29 +77,33 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
         in = fopen("..//data//randomintegers.txt", "r"); // reopen file to build a BST
                             // with random integers from file 'in'
         BinaryTree bst;
-        bst.root = NULL;
-        bst.root =buildTree(in);
+
+        bst.root=NULL;
 
 
         ////////////////Create and print normal binary trr///////
 
          while (fscanf(in, "%s", word)!= EOF) {
+
              data1 = atoi(word);
+
              if (bst.root == NULL){
-                 bst.root = newTreeNode(newNodeData(data1));
 
-         }
+                    bst.root = newTreeNode(newNodeData(data1));
+                    serialize(bst.root,out);}
+
              else {
+
                  TreeNodePtr node = findOrInsert(bst, newNodeData(data1));
+                    serialize(node,out);
+
              }
+
+
          }
 
-         TreeNode *tr;
-         while (fscanf(in, "%s", word)!= EOF) {
-             puts("hel");
-             tr = buildTree(out);
-             fprintf(out, "%d ", tr->data.num);
-         }
+         ;
+
         fclose(out);
 
 

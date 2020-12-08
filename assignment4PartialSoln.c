@@ -81,25 +81,17 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
         bst.root=NULL;
 
 
-        ////////////////Create and print normal binary trr///////
+        ////////////////Create and print normal binary tree///////
 
          while (fscanf(in, "%s", word)!= EOF) {
-
              data1 = atoi(word);
-
              if (bst.root == NULL){
-
                     bst.root = newTreeNode(newNodeData(data1));
                     serialize(bst.root,out);}
-
              else {
-
                  TreeNodePtr node = findOrInsert(bst, newNodeData(data1));
                     serialize(node,out);
-
              }
-
-
          }
 
          ;

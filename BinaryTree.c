@@ -67,7 +67,7 @@ void serialize(TreeNode* root, FILE *fp)
 
 // Else, store current node and recur for its children
     int intData =root->data.num; // extract value if the data is an integer
-   // if data is string and not an integer
+
 
         fprintf(fp, "%d ", intData); // if the data is an integer
 
@@ -78,7 +78,15 @@ void serialize(TreeNode* root, FILE *fp)
 //From BestBST.c
 
 int getNodeLevel(int n) {
-    //comments required
+
+    //This function is to be used to insertBestBST function.
+    //The number of nodes are stored in a static variable(To save the value and stop it from re-setting to 0 everytime the program runs) which is incremented each time a node is inserted.
+    //The number of nodes is Given as a parameter to the getNodeLevel function which then increments the level variable whenever the level is not even.
+    //The level variable that is returned represents the number of "2"'s/(levels) that can fit in the given amount of nodes.(highest power of 2 factors)
+    //Gets the index of each data member/node, any member with an odd index goes on level 0
+
+
+
     int level = 0;
     while (n % 2 == 0) {
         level++;
@@ -93,19 +101,31 @@ void insertBestBST(int n, TreeNodePtr lastNode[]) {
     NodeData newNodeData(int);
     static int numNodes = 0;
 
-    TreeNodePtr p = newTreeNode(newNodeData(n));
+    TreeNodePtr p = newTreeNode(newNodeData(n)); //left and right are implicitly set to NULL
     numNodes++;
     int level = getNodeLevel(numNodes);
-    // comments required
-    //
+
+    //If the level is not 0(not a leaf node) left pointer is set to null(already the case)
+    //If it is a leaf node, the left pointer is set to the node one level lower
+
     if (level > 0) p -> left = lastNode[level-1];
-    // comments required
+
+   //If this node exists and has a NULL right link,set it to the new node and increment the level variable
     if (lastNode[level+1] != NULL)
-        if (lastNode[level+1] -> right == NULL)
-            lastNode[level+1] -> right = p;
+        if (lastNode[level+1] -> right == NULL)lastNode[level+1] -> right = p;
+
     // the current node is the last node processed at this level
     lastNode[level] = p;
 } //end insertBestBST
+
+
+
+
+
+
+
+
+
 
 TreeNodePtr finalizeBestBST(TreeNodePtr lastNode[]) {
     int m, n = MAX_HEIGHT - 1;

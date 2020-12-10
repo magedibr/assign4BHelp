@@ -4,6 +4,7 @@
 #define MaxWordSize 10
 #define MAX_HEIGHT 10 // max height for an optimum BST, total number of nodes must be less than 2 ^ (MAX_HEIGHT +1) - 1
 
+                                        ////////ADD THE TOP COMMENTS
 typedef struct {
         int num;
      } NodeData;

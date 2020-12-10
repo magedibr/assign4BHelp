@@ -67,7 +67,6 @@ TODO 11. open a new text file for writing and write above BST's inOrder traversa
         FILE * in = fopen("..//data//randomintegers.txt", "w");
         FILE * out = fopen("..//data//normalbst.txt", "w");
 
-      ///////////////Done
         // TODO 3 Write the code to generate distinct random integers and save these
         for(int i =0;i<RANGE;i++) {
             fprintf(in, "%d ", rand());

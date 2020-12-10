@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+BinaryTree.h
+/Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.h
+
 /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/BinaryTree.h
 
 /Users/ab/Downloads/Assign4/assign04HelpProjectForStudents/main.c
